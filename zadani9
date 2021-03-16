@@ -1,0 +1,669 @@
+<?php
+/*
+//_________1.1_________//
+$a=5;$b=7;
+$sum=$a+$b; $product=$a*$b;
+echo $sum, $product
+*/
+
+/*
+//_________1.2_________//
+$a=4;$b=6;
+$sum=$a*$a+$b+$b;
+echo $sum;
+*/
+
+/*
+//_________1.3_________//
+$a=3;$b=5;$c=8;
+$avg=($a+$b+$c)/3;
+echo $avg;
+*/
+
+/*
+//_________1.4_________//
+$x=2;$y=6;$z=9;
+$p=4*($x+1);
+$d=($x*$x);
+$t=$d*$d;
+$f=$p-2*($z-$t+($y*$y));
+echo $f;
+*/
+
+/*
+//_________1.5_________//
+<?php
+$a=4;$b=8;$c=3;
+$meth1=($a+$b)/$c; 
+$meth2=($b+$c)/$a; 
+$meth3=($c+$a)/$b;
+echo "$meth1\n$meth2\n$meth3";
+?>
+*/
+
+/*
+//_________1.6_________//
+$a=564;
+$x1 = $a % 100;
+$x  = ($a - $x1) / 100;
+$y1 = $x1 % 10;
+$y  = ($x1 - $y1) / 10;
+$z  = $y1;
+echo $x+$y+$z;
+*/
+
+/*
+//_________2.1_________//
+$a=15;
+if($a>10) $a+=100;
+else $a-=30;
+echo $a;
+*/
+
+/*
+//_________2.2_________//
+$a=8;
+if($a%2==0) $a=$a/2;
+else $a=$a*3;
+echo $a;
+*/
+
+/*
+//_________2.3_________//
+$a=readline();
+if($a>=50) echo $a*$a;
+elseif ($a>10 && $a<30) echo "0";
+else echo "Ошибка"
+*/
+
+/*
+//_________2.4_________//
+$a=15;$b=4;
+if($a>$b) echo $a;
+else echo $b;
+*/
+
+/*
+//_________2.5_________//
+$a=19;$b=143;
+if ($b-$a==100) echo "Да";
+else echo "Нет";
+*/
+
+/*
+//_________2.6_________//
+$a=ReadLine(); $b=ReadLine();
+$c=$a-$b;$f=$b-$a;
+if (abs($c)<=20){echo "Да";}
+elseif (abs($f)<=20){echo "Да";}
+else{echo "Нет";}
+*/
+/*
+//_________2.7_________//
+$a=readline();
+$x1 = $a % 100;
+$x  = ($a - $x1) / 100;
+$y1 = $x1 % 10;
+$y  = ($x1 - $y1) / 10;
+$z  = $y1;
+if ($x <= $y && $y <= $z) {
+    echo $z.$y.$x;
+} elseif ($y <= $x && $x <= $z) {
+    echo $z.$x.$y; 
+} elseif ($z <= $x &&  $x <= $y) {   
+    echo $y.$x.$z;
+} elseif ($z <= $y && $y <= $x) {
+    echo $x.$y.$z;
+} elseif ($y >= $z && $z >= $a) {
+    echo $y.$z.$a;
+}
+*/
+
+/*
+//_________2.8_________//
+$number=readline();
+if($number=="1")
+echo "Понедельник";
+elseif($number=="2")
+echo "Вторник";
+elseif($number=="3")
+echo "Среда";
+elseif($number=="4")
+echo "Четверг";
+elseif($number=="5")
+echo "Пятница";
+elseif($number=="6")
+echo "Суббота";
+elseif($number=="7")
+echo "Воскресенье";
+else echo "Ошибка ввода";
+*/
+
+/*
+//_________2.9_________//
+$a=readline();
+if($a>80) echo "Здравствуйте, уважаемый!";
+else echo "Успехов!";
+*/
+
+/*
+//_________3.1_________//
+$arr[0] = 'Привет, ';
+$arr[1] = 'мир';
+$arr[2] = '!';
+echo "$arr[0]$arr[1]$arr[2]";
+*/
+
+/*
+//_________3.2_________//
+$arr[0] = 'Привет, ';
+$arr[1] = 'мир';
+$arr[2] = '!';
+$text="$arr[0]$arr[1]$arr[2]";
+echo $text;
+*/
+
+/*
+//_________3.3_________//
+$mas=array("Привет,","мир","!");
+$mas[0]="Пока, ";
+$text="$mas[0]$mas[1]$mas[2]";
+echo $text;
+*/
+
+/*
+//_________3.4_________//
+—
+*/
+
+/*
+//_________3.5_________//
+$arr=array("Коля"=>"1000", "Вася"=>"500", "Петя"=>"200");
+echo $arr['Коля'];
+*/
+
+/*
+//_________3.6_________//
+$arr = [1, 2, 3, 4, 5];
+echo "$arr[0]\n";
+$arr1[]=1;$arr1[]=2;$arr1[]=3;$arr1[]=4;$arr1[]=5;
+echo $arr1[0];
+*/
+
+/*
+//_________3.7_________//
+$arr =array("a" =>1, "b"=>2, "c"=>3);
+echo $arr['b'];
+*/
+
+/*
+//_________3.8_________//
+$arr =array("a" =>1, "b"=>2, "c"=>3);
+echo $sum=$arr['a']+$arr['b']+$arr['c'];
+*/
+
+/*
+//_________3.9_________//
+$arr=[1=>'пн','вт','ср','чт','пт','сб','вс'];
+echo $arr[4];
+*/
+
+/*
+//_________3.10_________//
+$arr=[1=>'пн','вт','ср','чт','пт','сб','вс'];
+$d=3;
+echo $arr[$d];
+*/
+
+/*
+//_________4.1_________//
+$arr = (
+'sp'=>['azul', 'rojo', 'verde'],
+'en'=>['blue', 'red', 'green'],
+);
+var_dump ($arr);
+echo  $arr['sp'][0];
+*/
+
+/*
+//_________4.2_________//
+//не понял суть задания 
+$arr=['a', 'b', 'c'];
+var_dump($arr);
+$arr1 = [
+'sp'=>['azul', 'rojo', 'verde'],'en'=>['blue', 'red', 'green'],];
+echo $arr1['sp'][0]; 
+echo $arr1['sp'][1]; 
+echo $arr1['en'][1]; 
+*/
+
+/*
+//_________4.3_________//
+$arr =array(2,8,5,3);
+echo $a=($arr[0]*$arr[1])+($arr[2]*$arr[3]);
+*/
+
+/*
+//_________4.4_________//
+$arr[]=1;$arr[]=2;$arr[]=3;$arr[]=4;$arr[]=5;
+*/
+
+/*
+//_________4.5_________//
+$arr = [
+'cms'=>['joomla', 'verde', 'drupal','rojo'],
+'colors'=>['blue'=>'голубой', 'red'=>'красный', 'green'=>'зеленый']
+];
+for ($a = 0; $a < 4; $a++) {
+   echo $arr['cms'][$a];
+   echo "\n";
+}
+*/
+
+/*
+//_________4.6_________//
+$arr = array(
+    "ru"=>array(1=>'пн','вт','ср','чт','пт','сб','вс'),
+    'en'=>array(1=>'mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn')
+    );
+echo $arr['ru'][1],"\n",$arr['en'][3];
+*/
+
+/*
+//_________4.7_________//
+$arr = array(
+    "ru"=>array(1=>'пн','вт','ср','чт','пт','сб','вс'),
+    'en'=>array(1=>'mn', 'ts', 'wd', 'th', 'fr', 'st', 'sn')
+    );
+$lang=array(1=>'ru','en');
+$day=array(1=>1,2,3,4,5,6,7);
+echo $arr[$lang[2]][$day[3]];
+*/
+
+/*
+//_________7.1_________//
+$a="php";
+$a=strtoupper($a);
+echo $a;
+*/
+
+/*
+//_________7.2_________//
+$a="php";
+$a=strtolower($a);
+echo $a;
+*/
+
+/*
+//_________7.3_________//
+$a="london";
+$a=ucfirst($a);
+echo $a;
+*/
+
+/*
+//_________7.4_________//
+$a="london";
+$a=lcfirst($a);
+echo $a;
+*/
+
+/*
+//_________7.5_________//
+$a="london is the capital of great britain";
+$a=ucwords($a);
+echo $a;
+*/
+
+/*
+//_________7.6_________//
+echo ucfirst(strtolower("LONDON"));
+*/
+
+/*
+//_________7.7_________//
+echo strlen("html css php");
+*/
+
+/*
+//_________7.8_________//
+$password="chel_ti_v_mute";
+if (strlen($password)>5 && strlen($password)<10) echo "correct";
+else "create another password";
+*/
+
+/*
+//_________7.9_________//
+$c="html css php";
+echo "\n";
+echo substr($c,0,4);
+echo "\n";
+echo substr($c,5,4);
+echo "\n";
+echo substr($c,9);
+*/
+
+/*
+//_________7.10_________//
+$a =readline();
+echo $a=substr($a,-3);
+*/
+
+/*
+//_________7.11_________//
+$a="https://paiza.io/projects/WRtWa3YPNUCQDvMAETQCig?language=php";
+if (substr($a,0,7)=="http://")
+echo "da";
+else echo "net";
+*/
+
+/*
+//_________7.12_________//
+$a="https://paiza.io/projects/WRtWa3YPNUCQDvMAETQCig?language=php";
+if (substr($a,0,8)=="https://" or substr($a,0,7)=="http://")
+echo "da";
+else echo "net";
+*/
+
+/*
+//_________7.13_________//
+$a="https://paiza.io/projects/WRtWa3YPNUCQDvMAETQCig?language=php";
+if (substr($a,-4)==".png")
+echo "da";
+else echo "net";
+*/
+
+/*
+//_________7.14_________//
+$a="https://paiza.io/projects/WRtWa3YPNUCQDvMAETQCig?language=php";
+if (substr($a,-4)==".png" or substr($a,-4)==".jpg")
+echo "da";
+else echo "net";
+*/
+
+/*
+//_________7.15_________//
+$c="html css php";
+if (strlen($c)>5) echo substr($c,0,5)."...";
+else echo $c;
+*/
+
+/*
+//_________7.16_________//
+$str="31.12.2013";
+$str = str_replace(".", "—", "$str");
+echo $str;
+*/
+
+/*
+//_________7.17_________//
+$str="lick my sharingans";
+$let=array("a","c","b");
+$numb=array("1","3","2");
+$str = str_replace($let,$numb,$str);
+echo $str;
+*/
+
+/*
+//_________7.18_________//
+$str="1a2b3c4b5d6e7f8g9h0";
+$let=array("1","2","3","4","5","6","7","8","9", "0");
+$str = str_replace($let,"",$str);
+echo $str;
+*/
+
+/*
+//_________7.19_________//
+$str="1a2b3c4b5d6e7f8g9h0";
+echo strtr($str,"abc","123");
+$array=array("a"=>"1","b"=>"2","c"=>"3");
+echo "\n";
+echo strtr($str,$array);
+*/
+
+/*
+//_________7.21_________//
+$str="1a2b3c4b5d6e7f8g9h0";
+echo substr_replace($str,"!!!",2);
+*/
+
+/*
+//_________7.22_________//
+$str="abc abc abc";
+echo strpos($str,"b");
+*/
+
+/*
+//_________7.23_________//
+$str="abc abc abc";
+echo strrpos($str,"b");
+*/
+
+/*
+//_________7.24_________//
+$str="abc abc abc";
+echo strpos($str,"b",2);
+*/
+
+/*
+//_________7.25_________//
+$str="aa aa aa aa";
+echo strpos($str," ",4);
+echo "\n";
+$i=0;
+$no=0;
+while ($i<strlen($str))
+    {
+     if ($str[$i]=="." and $str[$i+1]==".") {$no++; echo "Yes";}
+     $i++;
+    }
+if ($no == 0) echo "No";
+*/
+
+/*
+//_________7.26_________//
+$a="https://paiza.io/projects/WRtWa3YPNUCQDvMAETQCig?language=php";
+if (substr($a,0,7)=="http://")
+echo "da";
+else echo "net";
+*/
+
+/*
+//_________7.27_________//
+$string="html css php";
+$kushina=explode(" ",$string);
+for ($i=0;$i<count($kushina);$i++) {echo $kushina[$i]."\n";}
+*/
+
+/*
+//_________7.28_________//
+$string=array("html","css","php");
+$kushina=implode(",",$string);
+echo $kushina;
+*/
+
+/*
+//_________7.29_________//
+$date="2016-12-31";
+$date=explode("-",$date);
+$date=$date['2'].'-'.$date['1'].'-'.$date['0'];
+echo $date;
+*/
+
+/*
+//_________7.30_________//
+$minato="1234567890";
+$minato=str_split($minato,2);
+for ($i=0;$i<count($minato);$i++){
+    echo $minato[$i]."\n";
+}
+*/
+
+/*
+//_________7.31_________//
+$minato="1234567890";
+$minato=str_split($minato);
+for ($i=0;$i<count($minato);$i++){
+    echo $minato[$i]."\n";
+}
+*/
+
+/*
+//_________7.32_________//
+$minato="1234567890";
+$minato=str_split($minato,2);
+$minato=implode("-",$minato);
+echo $minato;
+*/
+
+/*
+//_________7.33_________//
+$tobi="madara ";
+echo rtrim($tobi);
+*/
+
+/*
+//_________7.34_________//
+$sasuke="/php/";
+echo trim($sasuke,"/");
+*/
+
+/*
+//_________7.35_________//
+$sasuke ="слова слова слова.";
+echo rtrim($sasuke, '.').'.';
+*/
+
+/*
+//_________7.36_________//
+$amenotejikara=strrev("12345");
+echo $amenotejikara;
+*/
+
+/*
+//_________7.37_________//
+$kotoamatsukami=readline();
+if (strrev($kotoamatsukami)==$kotoamatsukami) {
+    echo "kayfovsk";
+}
+*/
+
+/*
+//_________7.38_________//
+$danzo=str_shuffle("krisa");
+echo $danzo;
+*/
+
+/*
+//_________7.39_________//
+$str =str_shuffle('abcdefghiklmnopqrstvxyz');
+echo substr($str, 0, 6);
+*/
+
+/*
+//_________7.40_________//
+for ($i=0;$i<=5;$i++){
+    echo str_repeat("x",$i)."\n";
+    if ($i==5){for ($j=4;$j>=0;$j--)
+        {
+            echo str_repeat("x",$j)."\n";
+        }
+    }
+}
+*/
+
+/*
+//_________7.41_________//
+for ($i=2;$i<=9;$i++){
+    echo str_repeat($i,$i);
+    echo "\n";
+}
+*/
+
+/*
+//_________7.43_________//
+$kyuubi=strip_tags("html, <b>php</b>, js");
+echo $kyuubi;
+*/
+
+/*
+//_________7.44_________//
+$kyuubi=strip_tags("html, <b>php</b>, js",'<b><i>');
+echo $kyuubi;
+*/
+
+/*
+//_________7.45_________//
+$kyuubi=htmlspecialchars("html, <b>php</b>, js");
+echo $kyuubi;
+*/
+
+/*
+//_________7.46_________//
+$tobirama=strstr('ab–cd–ef',"-");
+echo $tobirama;
+*/
+
+/*
+//_________8.1_________//
+$hashirama=explode(" ","Kirigakure Amegakure Konohagakure");
+sort($hashirama);
+$hashirama=implode(" ",$hashirama);echo $hashirama;
+*/
+
+/*
+//_________8.2_________//
+$suygetsu="var_test_text";
+$suygetsu=explode("_",$suygetsu);
+for ($i=1;$i<count($suygetsu);$i++){
+    ucfirst($suygetsu[$i]);
+}
+$suygetsu=implode($suygetsu);
+echo $suygetsu;
+//??????????????????????????????
+*/
+
+/*
+//_________8.3_________//
+$karin="12345 67890";
+$karin=explode(" ",$karin);
+for ($i=0;$i<count($karin);$i++){
+    $karin[$i]=strrev($karin[$i]);
+}
+$karin=implode(" ",$karin);
+echo $karin;
+*/
+
+/*
+//_________8.4_________//
+$tsunade = [5, 31, 17, 7, 73, 33];
+foreach ($tsunade as $booba){
+    if (strpos($booba, '3') !== false) {
+        echo $booba."\n";
+}}
+*/
+
+/*
+//_________8.5_________//
+$tsunade = [5, 31, 17, 7, 73, 33];
+$tsunade=implode($tsunade);
+$int ="3";
+$a=substr_count($tsunade,"3");
+echo $a*3;
+*/
+
+/*
+//_________8.6_________//
+$shikadai=0;
+$temari=str_split("12345678",2);
+foreach ($temari as $shikamaru){
+    $a+=$shikamaru;
+    echo $shikadai."\n";
+}
+*/
+
+/*
+//_________8.7_________//
+???
+*/
+?>
